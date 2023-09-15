@@ -31,6 +31,7 @@ class _ContactInfoState extends State<ContactInfo> {
   // String? filePath;
   XFile? xFile;
 
+
   @override
   void initState() {
     // nameController.text="Ravi";
@@ -309,7 +310,7 @@ class _ContactInfoState extends State<ContactInfo> {
                               mainAxisSize: MainAxisSize.min,
                               children: [
                                 ElevatedButton(
-                                    onPressed: () {
+                                    onPressed: ()  {
                                       if (formKey.currentState?.validate() ?? false) {
                                         FocusScope.of(context).unfocus(); // For keyboard Close
                                         formKey.currentState?.save();
@@ -328,7 +329,7 @@ class _ContactInfoState extends State<ContactInfo> {
                                         resume.address1=addressController.text;
                                         resume.address2=address1Controller.text;
                                         resume.address3=address2Controller.text;
-
+                                        resume.xFile=xFile as String?;
                                         Navigator.pushNamed(context, carrierobjective,arguments: resume);
                                         // Navigator.pushNamed(context, carrierobjective);
 
@@ -350,7 +351,6 @@ class _ContactInfoState extends State<ContactInfo> {
                                       // addressController.text = "";
                                       // address1Controller.text = "";
                                       // address2Controller.text = "";
-
                                       formKey.currentState?.reset();
                                       FocusScope.of(context).unfocus(); // For keyboard Close
                                     },

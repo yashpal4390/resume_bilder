@@ -34,6 +34,7 @@ class Resume{
   String? newjoindate;
   String? place;
   String? emp_status;
+  String? xFile;
 
   bool? en = false;
   bool? hi = false;

@@ -117,7 +117,6 @@ class _EducationState extends State<Archivment> {
                         },
                         child: Text("Save")),
                   ),
-
                 ],
               ),
             ),

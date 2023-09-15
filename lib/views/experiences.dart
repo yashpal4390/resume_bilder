@@ -250,7 +250,7 @@ class _EducationState extends State<Experiences> {
                               resume.Roles = RolesController.text;
                               resume.JoinDate = joindateController.text;
                               resume.ExitDate = exitdateController.text;
-                              resume.emp_status = selectedEmp_Status as String?;
+                              // resume.emp_status = selectedEmp_Status as String?;
                               Navigator.pushNamed(
                                   context, Techinical, arguments: resume);
                             }// Navigator.pushNamed(context, Techinical);

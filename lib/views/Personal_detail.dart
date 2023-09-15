@@ -232,7 +232,7 @@ class _PersionalDetailState extends State<PersionalDetail> {
                             resume.gu=gu;
                             resume.DOB = DOBController.text;
                             resume.Nationality = NationalityController.text;
-                            resume.Maritual_status = selectedMaritalStatus as String?;
+                            //resume.Maritual_status = selectedMaritalStatus as String?;
                             Navigator.pushNamed(context, education, arguments: resume);
                           } // Navigator.pushNamed(context, education);
                         },
