@@ -1,10 +1,5 @@
 import 'dart:typed_data';
 import 'package:flutter/material.dart';
-import 'package:image_picker/image_picker.dart';
-import 'package:image_picker/image_picker.dart';
-import 'package:image_picker/image_picker.dart';
-import 'package:image_picker/image_picker.dart';
-import 'package:image_picker/image_picker.dart';
 import 'package:pdf/pdf.dart';
 import 'package:pdf/widgets.dart' as pw;
 import 'package:printing/printing.dart';
@@ -66,23 +61,23 @@ class _PDFScreenState extends State<PDFScreen> {
                     style: pw.TextStyle(
                         fontWeight: pw.FontWeight.bold, fontSize: 20),
                   ),
-                  pw.SizedBox(height: 8),
+                  pw.SizedBox(height: 15),
                   pw.Text(
                     "${myResume?.Skills??""}",
                     style: pw.TextStyle(fontSize: 15),
                   ),
-                  pw.SizedBox(height: 8),
+                  pw.SizedBox(height: 25),
                   pw.Text(
                     "Interest/Hobbies",
                     style: pw.TextStyle(
                         fontWeight: pw.FontWeight.bold, fontSize: 20),
                   ),
-                  pw.SizedBox(height: 8),
+                  pw.SizedBox(height: 15),
                   pw.Text(
                     "${myResume?.hobby??""}",
                     style: pw.TextStyle(fontSize: 15),
                   ),
-                  pw.SizedBox(height: 8),
+                  pw.SizedBox(height: 25),
                   pw.Text(
                     "Projects",
                     style: pw.TextStyle(
@@ -108,7 +103,7 @@ class _PDFScreenState extends State<PDFScreen> {
                     "${myResume?.project_des??""}",
                     style: pw.TextStyle(fontSize: 15),
                   ),
-                  pw.SizedBox(height: 8),
+                  pw.SizedBox(height: 25),
                   pw.Text(
                     "Personal Details",
                     style: pw.TextStyle(
@@ -129,7 +124,7 @@ class _PDFScreenState extends State<PDFScreen> {
                     "${myResume?.Nationality??""}",
                     style: pw.TextStyle(fontSize: 15),
                   ),
-                  pw.SizedBox(height: 8),
+                  pw.SizedBox(height: 15),
                   pw.Text(
                     "Experience",
                     style: pw.TextStyle(
@@ -162,12 +157,13 @@ class _PDFScreenState extends State<PDFScreen> {
                 height: 160,
                 color: PdfColor.fromInt(0xffEBC9BB),
                 child: pw.Column(children: [
+                  pw.SizedBox(height: 8),
                   pw.Text(
                     "${myResume?.name??""}",
                     style: pw.TextStyle(
-                        fontSize: 30, fontWeight: pw.FontWeight.bold),
+                        fontSize: 35, fontWeight: pw.FontWeight.bold),
                   ),
-                  pw.SizedBox(height: 12),
+                  pw.SizedBox(height: 20),
                   pw.Text(
                     "${myResume?.Career_Objective??""}",
                     style: pw.TextStyle(

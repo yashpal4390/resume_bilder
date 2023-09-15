@@ -77,7 +77,7 @@ class _EducationState extends State<Hobbies> {
                           if (formKey.currentState?.validate() ?? false) {
                             resume.hobby = HobbyController.text;
                             Navigator.pushNamed(
-                                context, archivment, arguments: resume);
+                                context, projects, arguments: resume);
                           }// Navigator.pushNamed(context, archivment);
                         },
                         child: Text("Save")),
