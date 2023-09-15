@@ -59,22 +59,7 @@ class _EducationState extends State<Archivment> {
                   "Enter Achivement",
                   style: TextStyle(color: Colors.grey, fontSize: 18),
                 )),
-                // ...skillList
-                //     .map((e) => Row(
-                //           children: [
-                //             Expanded(child: TextFormField(
-                //               onChanged: (value) {
-                //                 e = value;
-                //               },
-                //             )),
-                //             IconButton(
-                //                 onPressed: () {
-                //                   print("Delete $e");
-                //                 },
-                //                 icon: Icon(Icons.delete))
-                //           ],
-                //         ))
-                //     .toList(),
+
                 for (int i = 0; i < skillList.length; i++)
                   Row(
                     children: [
