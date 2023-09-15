@@ -88,15 +88,15 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
       body: Center(
-        // child: Column(
-        //   mainAxisAlignment: MainAxisAlignment.center,
-        //   children: <Widget>[
-        //     Image.asset("images/empty_box.png", height: 150, width: 150),
-        //     const Text(
-        //       'You have pushed the button this many times:',
-        //     ),
-        //   ],
-        // ),
+         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Image.asset("images/empty_box.png", height: 150, width: 150),
+            const Text(
+              'No Resume+Create New Resumes',
+            ),
+          ],
+        ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {

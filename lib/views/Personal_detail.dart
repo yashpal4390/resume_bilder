@@ -1,6 +1,7 @@
+// ignore_for_file: prefer_const_constructors, non_constant_identifier_names
+
 import 'package:flutter/material.dart';
-import 'package:resume_bilder/views/education.dart';
-import 'package:resume_bilder/views/techinical_skills.dart';
+
 
 import '../constant.dart';
 import '../util.dart';
@@ -226,6 +227,9 @@ class _PersionalDetailState extends State<PersionalDetail> {
                     ElevatedButton(
                         onPressed: () {
                           if (formKey.currentState?.validate() ?? false) {
+                            resume.en=en;
+                            resume.hi=hi;
+                            resume.gu=gu;
                             resume.DOB = DOBController.text;
                             resume.Nationality = NationalityController.text;
                             resume.Maritual_status = selectedMaritalStatus as String?;

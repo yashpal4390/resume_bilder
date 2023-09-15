@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:resume_bilder/views/contect.dart';
 import 'package:resume_bilder/constant.dart';
 import 'package:resume_bilder/views/ruseme.dart';
 Resume resume=Resume();

@@ -33,6 +33,12 @@ class Resume{
   String? declaration;
   String? newjoindate;
   String? place;
+  String? emp_status;
+
+  bool? en = false;
+  bool? hi = false;
+  bool? gu = false;
+
   void display(){
     print("name $name");
     print("email $email");

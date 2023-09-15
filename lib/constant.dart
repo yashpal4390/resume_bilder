@@ -1,3 +1,5 @@
+// ignore_for_file: constant_identifier_names
+
 const String homePage="/home_page";
 const String build_op="/build_option";
 const String contact="/contact_info";

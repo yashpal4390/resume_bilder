@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'package:resume_bilder/views/techinical_skills.dart';
 
@@ -18,7 +20,7 @@ TextEditingController joindateController = TextEditingController();
 TextEditingController exitdateController = TextEditingController();
 GlobalKey<FormState> formKey = GlobalKey<FormState>();
 class _EducationState extends State<Experiences> {
-  MaritalStatus? selectedMaritalStatus;
+  Emp_Status? selectedEmp_Status;
 
   @override
   Widget build(BuildContext context) {
@@ -127,19 +129,19 @@ class _EducationState extends State<Experiences> {
                         Row(
                           children: [
                             Radio(
-                              value: MaritalStatus.currently,
-                              groupValue: selectedMaritalStatus,
+                              value: Emp_Status.currently,
+                              groupValue: selectedEmp_Status,
                               materialTapTargetSize:
                                   MaterialTapTargetSize.shrinkWrap,
                               onChanged: (value) {
-                                selectedMaritalStatus = value;
+                                selectedEmp_Status = value;
                                 setState(() {});
                                 print("value $value");
                               },
                             ),
                             InkWell(
                               onTap: () {
-                                selectedMaritalStatus = MaritalStatus.currently;
+                                selectedEmp_Status = Emp_Status.currently;
                                 setState(() {});
                               },
                               child: Text(
@@ -153,19 +155,19 @@ class _EducationState extends State<Experiences> {
                           children: [
                             Radio(
                               //value: swtich,
-                              value: MaritalStatus.previously,
-                              groupValue: selectedMaritalStatus,
+                              value: Emp_Status.previously,
+                              groupValue: selectedEmp_Status,
                               materialTapTargetSize:
                                   MaterialTapTargetSize.shrinkWrap,
                               onChanged: (value) {
-                                selectedMaritalStatus = value;
+                                selectedEmp_Status = value;
                                 setState(() {});
                                 print("value $value");
                               },
                             ),
                             InkWell(
                               onTap: () {
-                                selectedMaritalStatus = MaritalStatus.previously;
+                                selectedEmp_Status = Emp_Status.previously;
                                 setState(() {});
                               },
                               child: Text(
@@ -248,6 +250,7 @@ class _EducationState extends State<Experiences> {
                               resume.Roles = RolesController.text;
                               resume.JoinDate = joindateController.text;
                               resume.ExitDate = exitdateController.text;
+                              resume.emp_status = selectedEmp_Status as String?;
                               Navigator.pushNamed(
                                   context, Techinical, arguments: resume);
                             }// Navigator.pushNamed(context, Techinical);
@@ -265,4 +268,4 @@ class _EducationState extends State<Experiences> {
   }
 }
 
-enum MaritalStatus { previously, currently }
+enum Emp_Status { previously, currently }
